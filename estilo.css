@@ -30,6 +30,12 @@
     height: 60px;
 }
 
+#bloco_projetos .carousel-item h5 img {
+    width: 30px;
+    height: 30px;
+}
+
+
 #bloco_habilidades img:hover{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -49,12 +55,27 @@ textarea:focus, input:focus {
     outline: 0;
 }
 
-@keyframes blinkCursor{
-    from{
-        border-right-color: white 
-    }
+#bloco_sobreMin{
+    transform: translateY(-421px);
+}
+
+#bloco_habilidades{
+    transform: translateY(-421px);
+}
+
+#bloco_projetos{
+    transform: translateY(-421px);
+}
+
+.animar{
+    animation-name: animar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animar{
     to{
-        border-right-color: transparent ;
+        transform: translateY(0);
     }
 }
 
