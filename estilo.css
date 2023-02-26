@@ -1,10 +1,22 @@
-#caixa_inicio{
-    height: 500px;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nome{
+    color: #03e8e8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+#titulo_logo{
+    color: #03e8e8;
+    font-size: 1em;
 }
 
 #console{
-    width: 21em;
-    height: 18em;
+    width: 28em;
+    height: 21em;
     border: 3px solid red;
     margin-bottom: 50px;
     background-color: #000000;
@@ -13,13 +25,31 @@
     font-size: 16px;
     border-radius: 10px;
     border-color: white;
-    margin-top: 15px;
+
+    margin: 0 auto;
 }
+
 
 #titulo{
     color: white;
     font-size: 2em;
+    padding: 1em;
     font-family: 'Press Start 2P', cursive;
+}
+
+#secao_projetos img {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#secao_projetos img:hover {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 #bloco_habilidades img{
@@ -44,11 +74,21 @@
     height: 70px;
 }
 
-.paragrafo{
-    color: white;
-    padding: 1em;
+.texto{
+    color: rgb(212, 207, 207);
     font-family: 'Montserrat', sans-serif;
 }
+
+.borda {
+    background-color: transparent;
+    padding: 10px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, rgb(192, 57, 12), rgb(134, 7, 128));
+    border-image-slice: 1;
+    color: white;
+    margin-left: 1em;
+}
+
 
 textarea:focus, input:focus {
     box-shadow: 0 0 0 0;
@@ -62,10 +102,31 @@ textarea:focus, input:focus {
 #bloco_habilidades{
     transform: translateY(-421px);
 }
-
+color
 #bloco_projetos{
     transform: translateY(-421px);
 }
+
+footer{
+    background-color: #423A3A;
+    height: 100%;
+    padding: 0.5em;
+    color: white;
+}
+
+
+footer i {
+    background-color: rgb(137, 134, 134);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 35px;
+}
+
+i{
+    margin-right: 1em;
+    font-size: 1.3em;
+}
+
 
 .animar{
     animation-name: animar;
@@ -73,9 +134,27 @@ textarea:focus, input:focus {
     animation-fill-mode: forwards;
 }
 
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+
 @keyframes animar{
     to{
         transform: translateY(0);
     }
 }
+
+@media (max-width: 575.98px) {
+    #console{
+        width: 17em;
+        height: 14em;
+    }
+    
+    #titulo{
+        font-size: 1em;
+    }
+}
+    
 
